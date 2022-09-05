@@ -1,0 +1,21 @@
+/* For Tablet View */
+@media screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+
+    .inner_about_me p {
+        width: 100%;
+    }
+}
+
+/* For Mobile Phones Portrait or Landscape View */
+@media screen and (max-device-width: 640px) {
+    .inner_about_me p {
+        width: 100%;
+    }
+.inner_about_me img {
+    width: 80%;
+    padding:10px;
+    margin: 0;
+    outline: none;
+    border-right: none;
+}
+}
