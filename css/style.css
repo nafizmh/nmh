@@ -30,66 +30,157 @@ html {
     font-family: 'Poppins', sans-serif;
     background-color: #5d6c5d;
 }
+
 a {
     text-decoration: none;
 }
+
 li {
     list-style: none;
     margin: 0;
     padding: 0;
 }
+
 ul {
     margin: 0;
     padding: 0;
 }
+
 img {
     width: 100%;
 }
+
 h4 {
     font-family: 'Signika Negative', sans-serif;
     font-size: 36px;
     font-weight: 500;
     color: #666666;
 }
+
 h6,
-h5,h3 {
+h5,
+h3 {
     color: darkorange;
     font-family: 'Signika Negative', sans-serif;
 }
+
+#loader {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+.lds-ellipsis {
+    display: inline-block;
+    position: relative;
+    width: 80px;
+    height: 80px;
+}
+
+.lds-ellipsis div {
+    position: absolute;
+    top: 33px;
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    background: #fff;
+    animation-timing-function: cubic-bezier(0, 1, 1, 0);
+}
+
+.lds-ellipsis div:nth-child(1) {
+    left: 8px;
+    animation: lds-ellipsis1 0.6s infinite;
+}
+
+.lds-ellipsis div:nth-child(2) {
+    left: 8px;
+    animation: lds-ellipsis2 0.6s infinite;
+}
+
+.lds-ellipsis div:nth-child(3) {
+    left: 32px;
+    animation: lds-ellipsis2 0.6s infinite;
+}
+
+.lds-ellipsis div:nth-child(4) {
+    left: 56px;
+    animation: lds-ellipsis3 0.6s infinite;
+}
+
+@keyframes lds-ellipsis1 {
+    0% {
+        transform: scale(0);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes lds-ellipsis3 {
+    0% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(0);
+    }
+}
+
+@keyframes lds-ellipsis2 {
+    0% {
+        transform: translate(0, 0);
+    }
+
+    100% {
+        transform: translate(24px, 0);
+    }
+}
+
 /*
-=============================================================
-Hero css
-=============================================================
-*/
+=============================================================Hero css=============================================================*/
 #hero_area {
     clear: both;
     background-color: #5d6c5d;
 }
+
 .inner_hero_area h2 {
     color: #fff;
     font-family: 'Josefin Sans', sans-serif;
 }
+
 .inner_hero_area span {
     color: #ffffff66;
     font-size: 12px;
     padding: 0;
     margin-left: -9px;
 }
+
 .inner_hero_area ul li a {
     color: white;
     font-size: 18px;
     background-color: darkorange;
     border-radius: 15px;
 }
+
 .inner_hero_area ul li:hover a {
     color: darkorange;
     background-color: white;
     transition: 0.5s;
 }
+
 .inner_hero_area ul li {
     color: white;
     padding: 10px 5px;
 }
+
 /*
 =============================================================
 About_area css
@@ -99,6 +190,7 @@ About_area css
     background: dark;
     clear: both;
 }
+
 .inner_about_me img {
     width: 80%;
     padding: 8px 20px 10px 10px;
@@ -106,6 +198,7 @@ About_area css
     outline: none;
     border-right: 2px solid #80808070;
 }
+
 .inner_about_me p {
     width: 80%;
     font-size: 15px;
@@ -113,17 +206,20 @@ About_area css
     color: #666666;
     line-height: 2.1em;
 }
+
 /*
 =============================================================
 Work_area css
 =============================================================
 */
-#work_area{
+#work_area {
     background: #5D6C5D;
 }
+
 .work_box {
     cursor: pointer;
 }
+
 .work_box img {
     border: 4px solid orange;
     border-bottom: none;
@@ -131,14 +227,16 @@ Work_area css
     height: 191px;
     z-index: -1;
 }
+
 .work_box h5 {
     background-color: #FF8C00;
     padding: 5px 0px;
     /*    margin-top: -40px;*/
     text-align: center;
-/*    z-index: 1;*/
+    /*    z-index: 1;*/
     color: white;
 }
+
 .work_box h5:hover {
     background-color: #FFA500;
     padding: 5px 0px;
@@ -147,7 +245,8 @@ Work_area css
     z-index: 1;
     color: black;
 }
-.inner_work_area h4{
+
+.inner_work_area h4 {
     color: white;
 }
 
@@ -158,22 +257,24 @@ Footer_area css
 =============================================================
 */
 
-.inner_footer_area h3{
+.inner_footer_area h3 {
     color: #666666;
 }
-.inner_footer_area p{
+
+.inner_footer_area p {
     font-size: 15px;
     font-family: 'Inconsolata', monospace;
     color: #666666;
     line-height: 1.6em;
 }
-    
-.baby_contact li{
+
+.baby_contact li {
     font-size: 18px;
     color: #666666;
     line-height: 2.8em;
     cursor: pointer;
-}    
-.baby_contact li .fa-solid{
+}
+
+.baby_contact li .fa-solid {
     color: #FF8C00;
 }
